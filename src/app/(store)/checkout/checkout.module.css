@@ -1,0 +1,23 @@
+.checkoutPage { padding: 32px 0 60px; }
+.pageTitle { font-size: 28px; font-weight: 800; margin-bottom: 32px; }
+.layout { display: grid; grid-template-columns: 1fr 420px; gap: 32px; align-items: start; }
+.formCard { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 24px; margin-bottom: 20px; }
+.formCard h2 { font-size: 18px; font-weight: 700; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--border-color); }
+.paymentOptions { display: flex; flex-direction: column; gap: 10px; }
+.paymentOption { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 2px solid var(--border-color); border-radius: var(--radius-lg); cursor: pointer; transition: all var(--transition-fast); font-size: 15px; font-weight: 500; }
+.paymentOption:hover { border-color: var(--color-primary-light); }
+.selected { border-color: var(--color-primary); background: var(--color-primary-light); }
+.paymentOption input { accent-color: var(--color-primary); }
+.summaryCard { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 24px; position: sticky; top: calc(var(--header-height) + 20px); }
+.summaryCard h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--border-color); }
+.orderItems { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color); }
+.orderItem { display: flex; gap: 12px; align-items: center; }
+.orderItem img { width: 56px; height: 56px; border-radius: var(--radius-md); object-fit: cover; background: var(--bg-tertiary); }
+.orderItem div { flex: 1; }
+.orderItem p { font-size: 14px; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.orderItem span { font-size: 13px; color: var(--text-muted); }
+.orderItem strong { font-size: 14px; color: var(--text-primary); white-space: nowrap; }
+.summaryRow { display: flex; justify-content: space-between; padding: 8px 0; font-size: 15px; }
+.total { border-top: 2px solid var(--border-color); margin-top: 8px; padding-top: 14px; font-weight: 800; font-size: 18px; }
+.total span:last-child { color: var(--color-secondary); font-size: 22px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
