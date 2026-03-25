@@ -6,12 +6,12 @@ npm run dev
 3. Truy cập website:
 http://localhost:3000
 
-### 🔐 Tài khoản Admin
+## Tài khoản Admin
 
 * Email: **[admin@shop.com](mailto:admin@shop.com)**
 * Password: **admin123**
 
-👉 Sau khi đăng nhập, truy cập trang quản trị:
+ Sau khi đăng nhập, truy cập trang quản trị:
 http://localhost:3000/admin
 
 ## Quản lý Database (Prisma)
